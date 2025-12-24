@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./trivia.css">
+    <title>trivia📄🎮</title>
+</head>
+<body id="fondo">
+  <section id="form">
+    <h1 id="titulo">Trivia de categorias🕹️</h1>
+    <form style=" border: none;
+                  width: 538px;
+                  height: 351px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  border-radius: 26px;
+                  background-color: rgba(34, 34, 34, 0.8);
+                  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 1rem;
+                  min-height: 10rem;
+                  color: white;">
+        <div class="form-group">
+            <label class="label" for="select1">Selecciona una categoria</label>
+            <select class="form-select" id="select1"aria-label="Default select example">
+                <option selected>Selecciona una categoria</option>
+                <option selected>Selecciona una categoría</option>
+                <option value="9">Cultura general</option>
+                <option value="10">Libros</option>
+                <option value="11">Películas</option>
+                <option value="12">Música</option>
+                <option value="13">Musicales y teatro</option>
+                <option value="14">Televisión</option>
+                <option value="15">Juegos de video</option>
+                <option value="16">Juegos de mesa</option>
+                <option value="17">Ciencia y naturaleza</option>
+                <option value="18">Computación</option>
+                <option value="19">Matemáticas</option>
+                <option value="20">Mitología</option>
+                <option value="21">Deportes</option>
+                <option value="22">Geografía</option>
+                <option value="23">Historia</option>
+                <option value="24">Política</option>
+                <option value="25">Arte</option>
+                <option value="26">Celebridades</option>
+                <option value="27">Animales</option>
+                <option value="28">Vehículos</option>
+                <option value="29">Comics</option>
+                <option value="30">Gatgets</option>
+                <option value="31">Anime y manga</option>
+                <option value="32">Cartoons</option>
+              </select>
+            </div>
+        <div class="form-group">
+        <label class="label" for="select1">Selecciona una dificultad</label>
+        <select class="form-select" id="select2" aria-label="Default select example">
+            <option selected>Selecciona la dificultad</option>
+            <option value="easy">facil</option>
+            <option value="medium">mediano</option>
+            <option value="hard">dificil</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="label" for="select1">Selecciona una modalidad</label>
+          <select class="form-select" id="select3" aria-label="Default select example">
+              <option selected>Selecciona una modalidad</option>
+              <option value="boolean">falso y verdadero</option>
+              <option value="multiple">multiple respuesta</option>
+            </select>
+        </div>
+  
+    </form>
+    <button type="button" class="button-90" id="comenzar"  onclick="obtenerPreguntas()">Comenzar!</button>
+
+  </section>
+</section>
+  
+    <section id="questionario" hidden>
+      <section id="preguntas">
+      </section>
+      <button type="button" class="button-90" id="nueva" onclick="reset()">Iniciar nueva trivia</button>
+      <button type="button" class="button-90" id="calificar" onclick="calificar()">Calificar preguntas</button>
+      <button type="button" class="button-90" id="ver" onclick="prueba()"> Ver preguntas</button>
+    </section>
+    
+
+ 
+    <script src="trivia.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+
+</html>
